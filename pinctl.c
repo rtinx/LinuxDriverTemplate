@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
 	else
 	{
 		ioctl(fd_pinctl, RTINX_IOCTL_GET_PIN, &command);
-		printf("GPIO%d.%02d -> %d\n", port, pin, value);
+		printf("GPIO%d.%02d -> %d\n", port, pin, command);
 	}
 	
 	close(fd_pinctl);
